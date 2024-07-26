@@ -229,7 +229,7 @@ body {
     }
 }
 .logo {
-    width: 50px; /* Sesuaikan lebar logo */
+    width: 100px; /* Sesuaikan lebar logo */
     height: auto; /* Pertahankan rasio aspek */
     display: block; /* Pastikan logo berada di baris sendiri */
     margin: 0 auto; /* Pusatkan logo secara horizontal */
