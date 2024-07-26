@@ -6,6 +6,8 @@
     <title>OSIS SMK PGRI 1 SIDOARJO</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -56,11 +58,11 @@
     <section id="news" class="news">
         <div class="container">
             <h2>News</h2> 
-    <div class="news-card"> 
-     <h3>Dokumentasi Kegiatan LDKS 2023/2024</h3> 
-     <img src="ldks23.JPG" alt="Berita 1" class="news-image"> 
-     <p>LDKS ( LATIHAN DASAR KEPEMIMPINAN SISWA ) Tahun 2023/2024 Yang berlokasi pada Villa Agape Pacet Jawa Timur, Diikuti oleh seluruh Anggota Osis Angkatan 2023</p> 
- </div>
+            <div class="news-card"> 
+                <h3>Dokumentasi Kegiatan LDKS 2023/2024</h3> 
+                <img src="ldks23.JPG" alt="Berita 1" class="news-image"> 
+                <p>LDKS ( LATIHAN DASAR KEPEMIMPINAN SISWA ) Tahun 2023/2024 Yang berlokasi pada Villa Agape Pacet Jawa Timur, Diikuti oleh seluruh Anggota Osis Angkatan 2023</p> 
+            </div>
             <div class="news-card">
                 <h3>MPLS SMK PGRI 1 SIDOARJO 2024/2025</h3>
                 <img src="mpls24.jpg" alt="Berita 2" class="news-image">
@@ -72,23 +74,45 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <h2>Galeri</h2>
-            <div class="gallery-item"><img src="ldks23.JPG" alt="Gallery 1" class="slide-down"></div>
-            <div class="gallery-item"><img src="mpls24.jpg" alt="Gallery 2" class="slide-down"></div>
-            <div class="gallery-item"><img src="mpls24.jpg" alt="Gallery 2" class="slide-down"></div>
+            <div class="gallery-container">
+                <div class="gallery-item"><img src="ldks23.JPG" alt="Gallery 1" class="slide-down"></div>
+                <div class="gallery-item"><img src="mpls24.jpg" alt="Gallery 2" class="slide-down"></div>
+                <div class="gallery-item"><img src="mpls24.jpg" alt="Gallery 3" class="slide-down"></div>
+            </div>
         </div>
     </section>
     <section id="contact" class="contact">
         <div class="container">
             <h2>Kontak</h2>
             <form>
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Pesan:</label>
-                <textarea id="message" name="message" required></textarea>
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
                 <button type="submit">Kirim</button>
             </form>
+            <div class="social-media">
+                <h3>Sosial Media</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/osispgri1sidoarjo" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/osis_sprisdaa" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/osispgri1sidoarjo" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Informasi Kontak</h3>
+                <p>Alamat: Jl. Dr.Wahidin 130b Sekardangan - Sidoarjo</p>
+                <p>Telepon: (031) 8965709</p>
+                <p>Email: osissmkpgri1sda@gmail.com</p>
+            </div>
         </div>
     </section>
     <footer class="footer">
@@ -96,6 +120,19 @@
             <p>&copy; 2024 OSISSPRISDA. All rights reserved.</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.gallery-container').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
