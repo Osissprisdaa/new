@@ -115,8 +115,9 @@ body {
 }
 
 .gallery-item img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    max-height: 200px; /* Tentukan tinggi maksimal agar ukuran gambar lebih konsisten */
     border-radius: 8px;
     margin-bottom: 15px;
     opacity: 0;
