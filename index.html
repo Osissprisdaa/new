@@ -6,8 +6,7 @@
     <title>OSIS SMK PGRI 1 SIDOARJO</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="header">
@@ -74,10 +73,17 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <h2>Galeri</h2>
-            <div class="gallery-container">
-                <div class="gallery-item"><img src="ldks23.JPG" alt="Gallery 1" class="slide-down"></div>
-                <div class="gallery-item"><img src="mpls24.jpg" alt="Gallery 2" class="slide-down"></div>
-                <div class="gallery-item"><img src="mpls24.jpg" alt="Gallery 3" class="slide-down"></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="ldks23.JPG" alt="Gallery 1"></div>
+                    <div class="swiper-slide"><img src="mpls24.jpg" alt="Gallery 2"></div>
+                    <div class="swiper-slide"><img src="mpls24.jpg" alt="Gallery 3"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
@@ -120,19 +126,20 @@
             <p>&copy; 2024 OSISSPRISDA. All rights reserved.</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $('.gallery-container').slick({
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                adaptiveHeight: true
-            });
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
     </script>
-    <script src="script.js"></script>
 </body>
 </html>
