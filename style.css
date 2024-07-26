@@ -234,5 +234,5 @@ body {
     display: block; /* Pastikan logo berada di baris sendiri */
     margin: 0 auto; /* Pusatkan logo secara horizontal */
     margin-bottom: 20px; /* Tambahkan jarak antara logo dan heading */
-    border-radius: 10px;
+    border-radius: 20px;
 }
