@@ -115,8 +115,10 @@ body {
 }
 
 .gallery-item img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
+    margin-bottom: 15px;
     opacity: 0;
     transform: translateY(-100px);
     transition: opacity 1s ease-out, transform 1s ease-out;
