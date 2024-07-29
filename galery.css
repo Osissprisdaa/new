@@ -92,3 +92,13 @@ nav ul {
   .gallery img:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bayangan saat dihover */
   }
+  .footer {
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.footer p {
+    margin: 0;
+}
