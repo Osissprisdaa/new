@@ -18,11 +18,11 @@ body {
 
 .container {
     width: 80%;
-    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    text-align: center; /* Pusatkan teks secara horizontal */
-  }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .logo {
     font-size: 24px;
@@ -234,15 +234,6 @@ body {
         font-size: 20px;
     }
 }
-
-/* Media query untuk layar kecil */
-@media (max-width: 600px) {
-    .container {
-      width: 90%;
-      padding: 10px;
-    }
-  }
-  
 .logo {
     width: 100px; /* Sesuaikan lebar logo */
     height: auto; /* Pertahankan rasio aspek */
