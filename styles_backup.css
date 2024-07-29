@@ -233,6 +233,14 @@ body {
     .event-card h3, .news-card h3 {
         font-size: 20px;
     }
+
+    /* Media query untuk layar kecil */
+@media (max-width: 600px) {
+    .container {
+      width: 90%;
+      padding: 10px;
+    }
+  }
 }
 .logo {
     width: 100px; /* Sesuaikan lebar logo */

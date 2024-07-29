@@ -18,11 +18,11 @@ body {
 
 .container {
     width: 80%;
-    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    text-align: center; /* Pusatkan teks secara horizontal */
-  }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .logo {
     font-size: 24px;
@@ -119,46 +119,6 @@ body {
     border-radius: 8px;
     margin-bottom: 15px;
 }
-
-.gallery-container {
-    width: 80%; /* Sesuaikan lebar galeri */
-    margin: 0 auto; /* Pusatkan galeri secara horizontal */
-    overflow: hidden; /* Sembunyikan foto yang keluar dari wadah */
-  }
-  
-  .gallery {
-    display: flex;
-    transition: transform 0.5s ease; /* Efek transisi geser */
-    position: relative;
-  }
-  
-  .gallery button {
-    position: absolute;
-    top: 5px; /* Atur jarak dari atas */
-    right: 60px; /* Atur jarak dari kanan */
-  }
-  
-  
-  .gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 16px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
 
 .gallery-item img {
     width: 100%;
@@ -273,16 +233,15 @@ body {
     .event-card h3, .news-card h3 {
         font-size: 20px;
     }
-}
 
-/* Media query untuk layar kecil */
+    /* Media query untuk layar kecil */
 @media (max-width: 600px) {
     .container {
       width: 90%;
       padding: 10px;
     }
   }
-
+}
 .logo {
     width: 100px; /* Sesuaikan lebar logo */
     height: auto; /* Pertahankan rasio aspek */
