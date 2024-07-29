@@ -10,7 +10,7 @@ body {
 .header {
     background-color: #f0f0f0;
     color:black;
-    padding: 10px 0;
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -38,7 +38,6 @@ nav ul {
     padding: 0;
     display: flex;
   }
-  
   nav li {
     margin-left: 2rem;
   }
