@@ -134,8 +134,8 @@ body {
   
   .gallery button {
     position: absolute;
-    top: 10px; /* Atur jarak dari atas */
-    right: 10px; /* Atur jarak dari kanan */
+    top: 5px; /* Atur jarak dari atas */
+    right: 60px; /* Atur jarak dari kanan */
   }
   
   
