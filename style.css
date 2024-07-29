@@ -129,7 +129,15 @@ body {
   .gallery {
     display: flex;
     transition: transform 0.5s ease; /* Efek transisi geser */
+    position: relative;
   }
+  
+  .gallery button {
+    position: absolute;
+    top: 10px; /* Atur jarak dari atas */
+    right: 10px; /* Atur jarak dari kanan */
+  }
+  
   
   .gallery img {
     width: 100%;
