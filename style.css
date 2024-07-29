@@ -8,21 +8,21 @@ body {
 }
 
 .header {
-    background-color: #f0f0f0;
-    color:black;
-    padding: 1rem 0;
+    background: #000000;
+    color: white;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .container {
-    max-width: 960px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
 .logo {
     font-size: 24px;
@@ -32,20 +32,27 @@ body {
     width: 100%;
 }
 
-nav ul {
+.nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-  }
-  nav li {
-    margin-left: 2rem;
-  }
-  
-nav a {
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
-  }
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #f39c12;
+}
 
 .hero {
     background: #000000;
@@ -120,41 +127,39 @@ nav a {
     transform: translateY(-100px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
-
-.contact form {
+.social-media {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact form label {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.contact form input, .contact form textarea {
-    width: 80%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #bdc3c7;
-    border-radius: 5px;
-}
-
-.contact form button {
-    background: #2980b9;
+    justify-content: space-around;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
+    background-color: #ccc; /* Warna latar belakang default */
+    text-align: center;
+    line-height: 30px; /* Membuat teks berada di tengah ikon */
+    font-size: 20px;
     color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.contact form button:hover {
-    background: #1c598a;
-}
-
+  }
+  
+  /* Gaya untuk setiap ikon */
+  .social-media .instagram {
+    background-color: #E4405F; 
+  }
+  .social-media .youtube {
+    background-color: #FF0000; 
+  }
+  .social-media .tiktok {
+    background: linear-gradient(45deg, #F02C56, #9B11C5);
+  }
+  
+  /* Efek hover (opsional) */
+  .social-media a:hover {
+    opacity: 0.8;
+  }
+  
 .logo {
     width: 100px; /* Sesuaikan lebar logo */
     height: auto; /* Pertahankan rasio aspek */
@@ -189,6 +194,22 @@ nav a {
     .container {
         flex-direction: column;
     }
+
+    .nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
 
 @media (max-width: 480px) {
     .hero h2 {
