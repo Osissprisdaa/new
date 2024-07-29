@@ -120,6 +120,38 @@ body {
     margin-bottom: 15px;
 }
 
+.gallery-container {
+    width: 80%; /* Sesuaikan lebar galeri */
+    margin: 0 auto; /* Pusatkan galeri secara horizontal */
+    overflow: hidden; /* Sembunyikan foto yang keluar dari wadah */
+  }
+  
+  .gallery {
+    display: flex;
+    transition: transform 0.5s ease; /* Efek transisi geser */
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+
 .gallery-item img {
     width: 100%;
     border-radius: 8px;
@@ -242,7 +274,7 @@ body {
       padding: 10px;
     }
   }
-  
+
 .logo {
     width: 100px; /* Sesuaikan lebar logo */
     height: auto; /* Pertahankan rasio aspek */
