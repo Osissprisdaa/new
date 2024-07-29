@@ -1,0 +1,59 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header, footer {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 1rem;
+    padding: 1rem;
+    background-attachment: fixed; /* Latar belakang tetap saat scrolling */
+  }  
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+  /* Tambahkan ini ke style.css */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+/* Tambahkan ini ke style.css */
+.gallery img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus */
+  }
+  
+  .gallery img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bayangan saat dihover */
+  }
+    
+  
