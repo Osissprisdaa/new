@@ -65,8 +65,10 @@ nav ul {
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: large;
+    color: #000000;
   }
-  
+
   .gallery img {
     width: 100%;
     height: auto;
