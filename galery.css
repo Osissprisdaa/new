@@ -60,10 +60,12 @@ nav ul {
     gap: 1rem;
     padding: 1rem;
     background-attachment: fixed; /* Latar belakang tetap saat scrolling */
+  }  
+  .gallery figcaption {
     align-items: center;
     justify-content: center;
     text-align: center;
-  }  
+  }
   
   .gallery img {
     width: 100%;
