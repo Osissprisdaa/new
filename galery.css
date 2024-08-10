@@ -67,12 +67,18 @@ nav ul {
     text-align: center;
     font-size: large;
     color: #000000;
+    margin-top: 0.5rem;
+  }
+  .gallery figure {
+    display: block;
+    margin-bottom: 1rem;
   }
 
   .gallery img {
     width: 100%;
     height: auto;
     border: 1px solid #ddd;
+    display: block;
   }
   /* Tambahkan ini ke style.css */
 .lightbox {
